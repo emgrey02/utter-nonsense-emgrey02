@@ -2,9 +2,10 @@
   "name": "utter-nonsense-emgrey02",
   "version": "1.0.0",
   "description": "Duck favicon: [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt)",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html",
+    "build": "rm -f dist/* && parcel build src/index.html"
   },
   "repository": {
     "type": "git",
