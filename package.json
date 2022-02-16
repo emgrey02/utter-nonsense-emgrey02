@@ -1,0 +1,25 @@
+{
+  "name": "utter-nonsense-emgrey02",
+  "version": "1.0.0",
+  "description": "Duck favicon: [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/utter-nonsense-emgrey02.git"
+  },
+  "keywords": [],
+  "author": "Emma Grey <emgrey02@gmail.com> (https://github.com/emgrey02)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/utter-nonsense-emgrey02/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/utter-nonsense-emgrey02#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.1",
+    "sass": "^1.49.7"
+  }
+}
