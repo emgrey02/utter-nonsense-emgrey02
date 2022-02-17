@@ -1,0 +1,38 @@
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props";
+@font-face {
+  font-family: "Secuela";
+  src: url("Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf");
+  font-weight: 300 800;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
+  font-weight: 300 700;
+}
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+.title__main {
+  color: var(--gray-7);
+  font-size: var(--font-size-fluid-3);
+}
+.poem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 439;
+}
+.poem-container__img {
+  width: 100%;
+}
+.poem-container__poem--line {
+  font-size: var(--font-size-fluid-2);
+}
+body {
+  font-family: "Secuela", sans-serif;
+  background-color: var(--blue-3);
+  color: var(--gray-8);
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */
