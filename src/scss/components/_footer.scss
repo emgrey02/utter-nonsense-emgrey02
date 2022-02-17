@@ -1,0 +1,15 @@
+@use "../base/typography" as type;
+@use '../utilities/variables' as var;
+
+.footer {
+    width: 100%;
+    background-color: var(--blue-4);
+    height: auto;
+    bottom: 0;
+    padding: var(--size-6);
+
+    p {
+        margin-inline: auto;
+        text-align: center;
+    }
+}
