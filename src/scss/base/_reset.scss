@@ -1,2 +1,3 @@
 //normalize.css
-@import "https://unpkg.com/open-props/normalize.min.css";
+@use "./node_modules/open-props/open-props.min.css";
+@use "./node_modules/open-props/normalize.min.css";

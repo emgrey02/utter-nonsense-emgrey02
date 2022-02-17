@@ -22,5 +22,8 @@
     "@parcel/transformer-sass": "^2.3.1",
     "parcel": "^2.3.1",
     "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "open-props": "^1.3.8"
   }
 }
