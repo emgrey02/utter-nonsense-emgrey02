@@ -1,5 +1,6 @@
 @use "../base/typography" as type;
 @use "../utilities/variables" as var;
+@import "../utilities/mixins";
 
 .poem-container {
     display: flex;
@@ -19,12 +20,19 @@
         margin-block: var(--size-6);
         box-shadow: var(--shadow-2);
         padding: var(--size-8);
-        border-inline-start: var(--border-size-5) solid var(--gray-7);
-        background-color: var(--blue-1);
+        border-inline-start: var(--border-size-5) solid var.$banner-border-l;
+        background-color: var.$secondary-l;
 
         &--line {
             font-size: var(--font-size-fluid-2);
         }
+    }
+}
+
+@include dark-mode {
+    .poem-container__poem {
+        background-color: var.$secondary-d;
+        border-inline-start: var(--border-size-5) solid var.$banner-border-d;
     }
 }
 

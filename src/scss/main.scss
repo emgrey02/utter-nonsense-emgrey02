@@ -1,2 +1,9 @@
-@use "./base/reset";
-@use "./pages/home";
+@charset 'utf-8';
+
+@import "utilities/utilities-dir";
+
+@import "base/base-dir";
+
+@import "components/components-dir";
+
+@import "pages/pages-dir";

@@ -1,4 +1,5 @@
 //normal/light mode
+@import '../../node_modules/open-props/colors-hsl.min.css';
 
 // $themes: (
 //     $light-theme: (
@@ -33,13 +34,13 @@ $banner-bkgd-l: var(--gradient-15);
 $banner-border-l: var(--red-2);
 
 
-$main-d: var(--indigo-9);
-$secondary-d: var(--indigo-8);
+$main-d: hsl(var(--indigo-9-hsl) / 20%);
+$secondary-d: hsl(var(--indigo-8-hsl) / 20%);
 
 $text-display-d: var(--gray-4);
 $text-body-d: var(--gray-3);
 
-$banner-bkgd-d: var(--gradient-3);
-$banner-border-d: var(--green-5);
+$banner-bkgd-d: var(--gradient-23);
+$banner-border-d: var(--cyan-9);
 
 

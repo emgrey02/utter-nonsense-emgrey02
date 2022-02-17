@@ -1,6 +1,6 @@
 @use "../base/typography" as type;
 @use '../utilities/variables' as var;
-@use '../utilities/mixins';
+@import '../utilities/mixins';
 
 .footer {
     width: 100%;
@@ -10,13 +10,15 @@
     border-block-start: var(--size-2) solid var.$banner-border-l;
     padding: var(--size-6);
 
-    @include dark-mode {
-        background-image: var.$banner-bkgd-d;
-        border-block-start: var(--size-2) solid var.$banner-border-d;
-    }
-
     p {
         margin-inline: auto;
         text-align: center;
+    }
+}
+
+@include dark-mode {
+    .footer {
+        background-image: var.$banner-bkgd-d;
+        border-block-start: var(--size-2) solid var.$banner-border-d;
     }
 }
