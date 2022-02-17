@@ -1,0 +1,12 @@
+@use "../base/typography" as type;
+@use '../utilities/variables' as var;
+
+.title {
+    font-family: type.$display-font;
+    text-align: center;
+
+    &__main {
+        color: var.$text-display;
+        font-size: var(--font-size-fluid-3);
+    }
+}
