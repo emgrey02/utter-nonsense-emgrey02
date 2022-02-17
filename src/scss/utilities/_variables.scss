@@ -1,0 +1,15 @@
+@import "https://unpkg.com/open-props";
+
+//normal/light mode
+$main: var(--blue-3);
+
+$text-display: var(--gray-7);
+$text-body: var(--gray-8);
+
+@media (prefers-color-scheme: dark) {
+    $main: var(--indigo-9);
+
+    $text-display: var(--gray-4);
+    $text-body: var(--gray-3);
+}
+
