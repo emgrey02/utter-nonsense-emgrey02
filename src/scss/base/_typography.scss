@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Secuela";
+    src: url("../fonts/Secuela-Regular-v_1_787-TTF-VF.ttf");
+    font-weight: 300 800;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/SpaceGrotesk[wght].ttf");
+    font-weight: 300 700;
+}
+
+$display-font: "Space Grotesk", sans-serif;
+$body-font: "Secuela", sans-serif;
+
+$body-font-wght: 439;
