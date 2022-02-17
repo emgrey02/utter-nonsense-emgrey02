@@ -892,8 +892,10 @@
 }
 
 .title {
-  width: 100%;
   font-family: "Space Grotesk", sans-serif;
+  background-image: var(--gradient-15);
+  border-block-end: var(--size-2) solid var(--red-2);
+  width: 100%;
   text-align: center;
   display: block;
   padding-block: var(--size-4);
@@ -932,7 +934,7 @@
   box-shadow: var(--shadow-2);
   padding: var(--size-8);
   border-inline-start: var(--border-size-5) solid var(--gray-7);
-  background-color: var(--blue-2);
+  background-color: var(--blue-1);
 }
 
 .poem-container__poem--line {
@@ -952,9 +954,10 @@
 
 .footer {
   width: 100%;
-  background-color: var(--blue-4);
+  background-image: var(--gradient-15);
   height: auto;
   bottom: 0;
+  border-block-start: var(--size-2) solid var(--red-2);
   padding: var(--size-6);
 }
 
@@ -965,7 +968,7 @@
 
 body {
   font-family: "Secuela", sans-serif;
-  background-color: var(--blue-3);
+  background-color: var(--blue-2);
   color: var(--gray-8);
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

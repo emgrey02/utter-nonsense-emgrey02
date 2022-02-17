@@ -1,5 +1,7 @@
 @use '../utilities/variables' as var;
 @use '../base/typography' as type;
+@use '../utilities/mixins';
+
 @use '../components/header';
 @use '../components/poem';
 @use '../components/footer';
@@ -7,7 +9,11 @@
 
 body {
     font-family: type.$body-font;
-    background-color: var.$main;
-    color: var.$text-body;
-}
+    background-color: var.$main-l;
+    color: var.$text-body-l;
 
+    @include dark-mode {
+        background-color: var.$main-d;
+        color: var.$text-body-d;
+    }
+}

@@ -1,14 +1,14 @@
-4820
-104C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\addClassesToSVGElement.js132895195002910058 0
-70C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso132895195042502107 1
+4821
 97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\regions\TC.js132895195114819835 0
 87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\node-gyp-build\bin.js132895194980284699 0
-85C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\components\_header.scss132895445387266838 0
+85C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\components\_header.scss132896085481078666 0
+104C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\addClassesToSVGElement.js132895195002910058 0
+70C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso132895195042502107 1
 108C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\postcss-selector-parser\dist\util\unesc.js132895195026886786 0
 119C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\transformer-js\parcel-swc.linux-x64-musl.node132895195126329963 0
 98C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\sass\types\legacy\exception.d.ts132895195051329907 0
 77C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\detect-libc132895194994573347 1
-65C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\package.json132895998103530442 0
+65C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\package.json132896090139308507 0
 90C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\yaml\dist\test-events.js132895195034473691 0
 95C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@babel\highlight\node_modules132895194965946302 1
 92C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\fs-search\index.js132895194980284699 0
@@ -16,7 +16,7 @@
 95C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso\lib\restructure\index.js132895195031643795 0
 83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\binary-extensions132895194995520949 1
 87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\node-addon-api\napi.h132895195007167820 0
-78C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\pages\_home.scss132895445245420289 0
+78C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\pages\_home.scss132896089669741776 0
 83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\readdirp\index.js132895194980194947 0
 91C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\transformer-image132895195000116370 1
 93C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\mergeStyles.js132895195028016799 0
@@ -46,7 +46,7 @@
 92C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\graph\src\Graph.js132895195007497585 0
 118C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\msgpackr-extract\prebuilds\win32-x64\node.abi88.node132895195053719600 0
 108C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\postcss-normalize-display-values\README.md132895194992496800 0
-57C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist132895997135901838 1
+57C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist132896061382128428 1
 97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\utils\test\input\config132895195060512051 1
 91C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\yaml\browser\dist\util.js132895195038889904 0
 90C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\lodash.memoize\README.md132895194980204927 0
@@ -124,16 +124,22 @@
 91C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\sortAttrs.js132895195049768913 0
 90C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\lmdb\src\compression.cpp132895195055166706 0
 124C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\msgpackr-extract\prebuilds\linux-arm64\electron.abi98.node132895195007217738 0
-83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\components\_poem.scss132895997134954801 0
+83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\components\_poem.scss132896055423836100 0
 109C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\core\test\fixtures\config-malformed132895194983351517 1
 94C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\workers\lib\index.js132895195013343548 0
 67C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\pages132895232662305107 1
 86C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\htmlnano\LICENSE.txt132895195052926586 0
 114C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\terser\node_modules\commander\typings\index.d.ts132895194996951254 0
 102C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\dom-serializer\node_modules\entities132895195009433862 1
-71C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\utilities132895240498626788 1
+71C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\utilities132896066417229271 1
+83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\package.json132895195055132142 0
+97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\regions\FR.js132895195086840211 0
+84C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\utilities\_mixins.scss132896074755393578 0
+104C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\features\auxclick.js132895195037619911 0
+110C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@swc\helpers\lib\_assert_this_initialized.js132895194995087627 0
+70C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\yaml132895195046127391 1
 97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\regions\DM.js132895195079238967 0
-87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\utilities\_variables.scss132896030755848625 0
+87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\utilities\_variables.scss132896070307140670 0
 89C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\postcss\lib\result.d.ts132895195039041841 0
 106C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\stylehacks\src\dictionary\identifiers.js132895195000415355 0
 94C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\htmlnano\lib\presets\safe.js132895195025797557 0
@@ -151,7 +157,7 @@
 85C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\base-x\package.json132895194980863154 0
 114C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\features\permissions-policy.js132895195108117639 0
 118C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\features\prefers-reduced-motion.js132895195109352560 0
-85C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\components\_footer.scss132895443531170406 0
+85C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\scss\components\_footer.scss132896078080712927 0
 107C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\postcss-calc\src\__tests__\convertUnit.js132895194983048678 0
 82C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\lmdb\src\dbi.cpp132895195056400617 0
 77C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\src\images\duck-icon.svg132895199819489998 0
@@ -227,7 +233,7 @@
 108C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\core\lib\requests\ConfigRequest.js132895195041411676 0
 89C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\fill-range\package.json132895194979646407 0
 72C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@types132895194965936341 1
-68C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\index.html132895996431850114 0
+68C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\index.html132896059431176368 0
 80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\normalize-path132895194983018843 1
 89C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\plugins.js132895195033398789 0
 74C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\css-tree132895195064736007 1
@@ -375,7 +381,7 @@
 76C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\fill-range132895194982882810 1
 87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\postcss\lib\node.d.ts132895195035577007 0
 77C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\xxhash-wasm132895195004993264 1
-93C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\utter-nonsense-emgrey02.59712999.js132895996432009850 0
+93C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\utter-nonsense-emgrey02.59712999.js132896059431325695 0
 93C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\removeTitle.js132895195045527455 0
 87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\namer-default132895194986512502 1
 77C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\postcss\lib132895195041081251 1
@@ -516,7 +522,7 @@
 90C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\supports-color\readme.md132895194990607547 0
 119C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@babel\highlight\node_modules\color-name\package.json132895194979925660 0
 79C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\node-releases132895194994901212 1
-101C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf132895996431580835 0
+101C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf132896059430997045 0
 98C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\core\lib\ParcelConfig.js132895195059219754 0
 114C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\entities\lib\generated\decode-data-html.d.ts.map132895195010499315 0
 83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\react-refresh\cjs132895194995843122 1
@@ -760,12 +766,8 @@
 80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\util-deprecate132895194993039593 1
 79C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\utility-types132895195009714640 1
 82C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\v8-compile-cache132895194990444199 1
-80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\weak-lru-cache132895195002441780 1
 90C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\postcss\lib\warning.d.ts132895195041401677 0
-83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\package.json132895195055132142 0
-104C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\features\auxclick.js132895195037619911 0
-110C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@swc\helpers\lib\_assert_this_initialized.js132895194995087627 0
-70C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\yaml132895195046127391 1
+80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\weak-lru-cache132895195002441780 1
 93C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\css-what\lib\parse.d.ts.map132895194998031706 0
 79C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\picomatch\lib132895194998194854 1
 78C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\yaml\browser132895195039191997 1
@@ -1339,7 +1341,7 @@
 110C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\source-map\dist\wasm-bindings-web.js132895195014301083 0
 148C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-fallback\package.json132895195056713809 0
 77C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\lmdb\mod.ts132895195107151536 0
-75C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\duck.f7547781.svg132895996431840177 0
+75C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\duck.f7547781.svg132896059431176368 0
 93C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\regenerator-runtime\LICENSE132895194979716225 0
 94C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\minifyStyles.js132895195028818513 0
 103C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\svgo\plugins\moveGroupAttrsToElems.js132895195030863382 0
@@ -2484,7 +2486,7 @@
 88C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\nan\doc\maybe_types.md132895195031393335 0
 80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\nan\doc\new.md132895195033219939 0
 100C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@swc\helpers\lib\_object_spread.js132895195036837207 0
-80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\index.b10d73a7.css.map132895997135871917 0
+80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\index.b10d73a7.css.map132896061382098501 0
 92C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\nan\doc\object_wrappers.md132895195034315352 0
 114C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@babel\highlight\node_modules\chalk\package.json132895194979925660 0
 83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\nan\doc\script.md132895195036357401 0
@@ -2605,8 +2607,6 @@
 83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\mdn-data\index.js132895194986657090 0
 122C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest.c132895195050092049 0
 93C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\mdn-data\css\selectors.json132895195018411155 0
-147C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\source-not-symlinked\dist.js132895195016489464 0
-98C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-js\lib\utils.js132895195015105318 0
 100C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\mdn-data\css\selectors.schema.json132895195019467268 0
 89C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\mdn-data\css\types.json132895195022467828 0
 110C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\runtime-js\lib\helpers\bundle-url.js132895194994257230 0
@@ -2796,7 +2796,6 @@
 86C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\json5\lib\parse.d.ts132895195016654786 0
 84C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\fill-range\LICENSE132895194981243646 0
 84C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\json5\lib\parse.js132895194997421005 0
-83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso\package.json132895195041548953 0
 87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\json5\lib\register.js132895194999841102 0
 88C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\json5\lib\unicode.d.ts132895195018864879 0
 89C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\json-source-map\LICENSE132895194990607547 0
@@ -3053,6 +3052,7 @@
 105C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\transformer-babel\lib\config.js132895195000573562 0
 87C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\detect-libc\README.md132895194981343371 0
 83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\types\lib132895195001188547 1
+83C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso\package.json132895195041548953 0
 80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso\lib\clean132895195040780927 1
 82C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso\lib\replace132895195040310918 1
 106C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\csso\lib\restructure\3-disjoinRuleset.js132895194986953008 0
@@ -3506,7 +3506,6 @@
 82C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@swc\helpers\src132895195062724919 1
 97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\regions\FI.js132895195083799350 0
 97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\regions\FJ.js132895195084440570 0
-97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\regions\FR.js132895195086840211 0
 85C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\events\test132895195007646941 1
 97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\caniuse-lite\data\regions\GB.js132895195086889918 0
 104C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\core\test\EntryRequest.test.js132895195048665607 0
@@ -4398,6 +4397,8 @@
 108C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-js\lib\CJSOutputFormat.js132895194980583910 0
 108C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-js\lib\ESMOutputFormat.js132895195001650528 0
 111C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-js\lib\GlobalOutputFormat.js132895195004963072 0
+147C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\source-not-symlinked\dist.js132895195016489464 0
+98C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-js\lib\utils.js132895195015105318 0
 95C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-html\LICENSE132895194979746136 0
 107C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-html\lib\HTMLPackager.js132895194980593878 0
 90C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\@parcel\packager-css\lib132895194980264761 1
@@ -4815,7 +4816,7 @@
 77C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\.bin\terser132895195128102952 0
 81C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\.bin\terser.cmd132895195128102952 0
 81C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\node_modules\.bin\terser.ps1132895195128252698 0
-80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\duck-icon.acf74cf5.svg132895996432129373 0
-76C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\index.b10d73a7.css132895997135871917 0
-89C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\SpaceGrotesk[wght].8dac9c1e.ttf132895996430643367 0
-97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\utter-nonsense-emgrey02.59712999.js.map132895996432029646 0
+80C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\duck-icon.acf74cf5.svg132896059431445389 0
+76C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\index.b10d73a7.css132896061382078541 0
+89C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\SpaceGrotesk[wght].8dac9c1e.ttf132896059429979570 0
+97C:\Users\emgre\code\web-dev2\utter-nonsense-emgrey02\dist\utter-nonsense-emgrey02.59712999.js.map132896059431345637 0

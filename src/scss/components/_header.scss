@@ -1,23 +1,39 @@
+@use '../utilities/mixins';
 @use "../base/typography" as type;
 @use '../utilities/variables' as var;
 
 .title {
-    width: 100%;
     font-family: type.$display-font;
+    background-image: var.$banner-bkgd-l;
+    border-block-end: var(--size-2) solid var.$banner-border-l;
+    width: 100%;
     text-align: center;
     display: block;
     padding-block: var(--size-4);
+
+    @include dark-mode {
+        background-image: var.$banner-bkgd-d;
+        border-block-end: var(--size-2) solid var.$banner-border-d;
+    }
     
     &__main {
-        color: var.$text-display;
+        color: var.$text-display-l;
         font-size: var(--font-size-fluid-3);
         margin-inline: auto;
+
+        @include dark-mode {
+            color: var.$text-display-d;
+        }
     }
 
     &__author {
-        color: var.$text-display;
+        color: var.$text-display-l;
         margin-inline: auto;
         margin-block-start: var(--size-4);
         font-size: var(--font-size-fluid-1);
+        
+        @include dark-mode {
+            color: var.$text-display-d
+        }
     }
 }
