@@ -2,11 +2,22 @@
 @use '../utilities/variables' as var;
 
 .title {
+    width: 100%;
     font-family: type.$display-font;
     text-align: center;
-
+    display: block;
+    padding-block: var(--size-4);
+    
     &__main {
         color: var.$text-display;
         font-size: var(--font-size-fluid-3);
+        margin-inline: auto;
+    }
+
+    &__author {
+        color: var.$text-display;
+        margin-inline: auto;
+        margin-block-start: var(--size-4);
+        font-size: var(--font-size-fluid-1);
     }
 }
