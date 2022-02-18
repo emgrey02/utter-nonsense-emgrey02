@@ -1,6 +1,6 @@
-@use '../utilities/variables' as var;
 @use '../base/typography' as type;
 @use '../utilities/mixins';
+@use '../utilities/functions';
 
 @use '../components/header';
 @use '../components/poem';
@@ -9,11 +9,4 @@
 
 body {
     font-family: type.$body-font;
-    background-color: var.$main-l;
-    color: var.$text-body-l;
-
-    @include dark-mode {
-        background-color: var.$main-d;
-        color: var.$text-body-d;
-    }
 }

@@ -1,24 +1,20 @@
 @use "../base/typography" as type;
-@use '../utilities/variables' as var;
+@use '../utilities/functions';
 @import '../utilities/mixins';
 
 .footer {
     width: 100%;
-    background-image: var.$banner-bkgd-l;
     height: auto;
     bottom: 0;
-    border-block-start: var(--size-2) solid var.$banner-border-l;
     padding: var(--size-6);
+
+    @include themify($themes) {
+        background-image: themed('bannerBkgdGradient');
+        border-block-start: var(--size-2) solid themed('bannerBorderColor');
+    }
 
     p {
         margin-inline: auto;
         text-align: center;
-    }
-}
-
-@include dark-mode {
-    .footer {
-        background-image: var.$banner-bkgd-d;
-        border-block-start: var(--size-2) solid var.$banner-border-d;
     }
 }

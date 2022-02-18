@@ -1,42 +1,38 @@
 @use "../base/typography" as type;
-@use '../utilities/variables' as var;
+@use '../utilities/functions';
 @import '../utilities/mixins';
+
 
 .title {
     font-family: type.$display-font;
-    background-image: var.$banner-bkgd-l;
-    border-block-end: var(--size-2) solid var.$banner-border-l;
     width: 100%;
     text-align: center;
     display: block;
     padding-block: var(--size-4);
+    border-block-end-width: var(--size-2);
+    border-block-end-style: solid;
+
+    @include themify($themes) {
+        background-image: themed('bannerBkgdGradient');
+        border-block-end-color: themed('bannerBorderColor');
+    }
     
     &__main {
-        color: var.$text-display-l;
         font-size: var(--font-size-fluid-3);
         margin-inline: auto;
+
+        @include themify($themes) {
+            color: themed('textDisplayColor');
+        }
     }
 
     &__author {
-        color: var.$text-display-l;
         margin-inline: auto;
         margin-block-start: var(--size-4);
         font-size: var(--font-size-fluid-1);
-    }
-}
 
-@include dark-mode {
-    .title {
-        background-image: var.$banner-bkgd-d;
-        border-block-end: var(--size-2) solid var.$banner-border-d;
-
-        &__main {
-            color: var.$text-display-d;
+        @include themify($themes) {
+            color: themed('textDisplayColor');
         }
-
-        &__author {
-            color: var.$text-display-d
-        }
-
     }
 }

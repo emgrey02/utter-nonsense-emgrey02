@@ -7,12 +7,17 @@
     <title>Utter Nonsense</title>
     <link rel="shortcut icon" href="images/duck-icon.svg" type="image/svg">
     <link rel="stylesheet" href="scss/main.scss">
+    <script src="script/index.js" defer></script>
 </head>
-<body>
+<body class="theme-light">
     <header class="title">
         <h1 class="title__main">Nonsense Alphabet 1<br>
         The Letter D</h1>
         <p class="title__author">by Edward Lear</p>
+        <div class="toggle">
+            <input class="toggle__input" type="checkbox" id="theme">
+            <label class="toggle__label" for="theme">Dark Mode</label>
+        </div>
     </header>
     <main class="poem-container">
         <img src="./images/duck.svg" alt="A duck floating on water" class="poem-container__img">
