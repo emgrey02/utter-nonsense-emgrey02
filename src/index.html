@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="scss/main.scss">
     <script src="script/index.js" defer></script>
 </head>
-<body class="theme-light">
+<body class="">
     <header class="title">
         <h1 class="title__main">Nonsense Alphabet 1<br>
         The Letter D</h1>
         <p class="title__author">by Edward Lear</p>
-        <div class="toggle">
+        <label class="toggle" for="theme">
+            Dark
             <input class="toggle__input" type="checkbox" id="theme">
-            <label class="toggle__label" for="theme">Dark Mode</label>
-        </div>
+            <span class="toggle__switch"></span>
+            Light
+        </label>
     </header>
     <main class="poem-container">
         <img src="./images/duck.svg" alt="A duck floating on water" class="poem-container__img">

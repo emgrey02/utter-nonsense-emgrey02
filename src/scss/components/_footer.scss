@@ -7,10 +7,12 @@
     height: auto;
     bottom: 0;
     padding: var(--size-6);
+    border-block-start-width: var(--size-2);
+    border-block-start-style: solid;
 
     @include themify($themes) {
         background-image: themed('bannerBkgdGradient');
-        border-block-start: var(--size-2) solid themed('bannerBorderColor');
+        border-block-start-color: themed('bannerBorderColor');
     }
 
     p {
