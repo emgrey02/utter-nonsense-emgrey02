@@ -1,10 +1,8 @@
 @use '../base/typography' as type;
-@use '../utilities/mixins';
-@use '../utilities/functions';
-
 @use '../components/header';
 @use '../components/poem';
 @use '../components/footer';
+@use '../components/toggle';
 
 
 body {

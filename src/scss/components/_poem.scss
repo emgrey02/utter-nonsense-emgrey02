@@ -1,6 +1,7 @@
 @use "../base/typography" as type;
 @use '../utilities/functions';
-@import "../utilities/mixins";
+@use "../utilities/mixins";
+@use '../utilities/themes' as var;
 
 .poem-container {
     display: flex;
@@ -10,7 +11,7 @@
     font-weight: type.$body-font-wght;
     min-height: 70vh;
 
-    @include themify($themes) {
+    @include mixins.themify(var.$themes) {
         background-color: themed('mainColor');
         color: themed('textBodyColor');
     }
@@ -28,7 +29,7 @@
         border-inline-start-width: var(--border-size-5);
         border-inline-start-style: solid;
 
-        @include themify($themes) {
+        @include mixins.themify(var.$themes) {
             background-color: themed('secondaryColor');
             border-inline-start-color: themed('bannerBorderColor');
         }

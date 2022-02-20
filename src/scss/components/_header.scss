@@ -1,6 +1,6 @@
 @use "../base/typography" as type;
-@use '../utilities/functions';
-@import '../utilities/mixins';
+@use '../utilities/mixins';
+@use '../utilities/themes' as var;
 
 
 .title {
@@ -12,7 +12,7 @@
     border-block-end-width: var(--size-2);
     border-block-end-style: solid;
 
-    @include themify($themes) {
+    @include mixins.themify(var.$themes) {
         background-image: themed('bannerBkgdGradient');
         border-block-end-color: themed('bannerBorderColor');
     }
@@ -21,7 +21,7 @@
         font-size: var(--font-size-fluid-3);
         margin-inline: auto;
 
-        @include themify($themes) {
+        @include mixins.themify(var.$themes) {
             color: themed('textDisplayColor');
         }
     }
@@ -31,7 +31,7 @@
         margin-block-start: var(--size-4);
         font-size: var(--font-size-fluid-1);
 
-        @include themify($themes) {
+        @include mixins.themify(var.$themes) {
             color: themed('textDisplayColor');
         }
     }

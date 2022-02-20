@@ -1,5 +1,5 @@
 const toggle = document.querySelector('.toggle__input');
-const theme = document.querySelector('body');
+const theme = document.querySelector('html');
 function switchTheme(e) {
     theme.classList.remove('theme-light');
     theme.classList.remove('theme-dark');

@@ -1,6 +1,8 @@
 @use "../base/typography" as type;
 @use '../utilities/functions';
-@import '../utilities/mixins';
+@use '../utilities/mixins';
+@use '../utilities/themes' as var;
+
 
 .footer {
     width: 100%;
@@ -10,7 +12,7 @@
     border-block-start-width: var(--size-2);
     border-block-start-style: solid;
 
-    @include themify($themes) {
+    @include mixins.themify(var.$themes) {
         background-image: themed('bannerBkgdGradient');
         border-block-start-color: themed('bannerBorderColor');
     }

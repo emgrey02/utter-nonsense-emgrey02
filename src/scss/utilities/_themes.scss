@@ -5,20 +5,16 @@ $themes: (
     light: (
         mainColor: var(--blue-2),
         secondaryColor: var(--blue-1),
-        
         textDisplayColor: var(--gray-7),
         textBodyColor: var(--gray-8),
-        
         bannerBkgdGradient: var(--gradient-15),
         bannerBorderColor: var(--red-2),
     ),
     dark: (
         mainColor: hsl(var(--indigo-9-hsl) / 20%),
         secondaryColor: hsl(var(--indigo-8-hsl) / 20%),
-        
         textDisplayColor: var(--gray-4),
         textBodyColor: var(--gray-3),
-        
         bannerBkgdGradient: var(--gradient-23),
         bannerBorderColor: var(--cyan-9),
     )

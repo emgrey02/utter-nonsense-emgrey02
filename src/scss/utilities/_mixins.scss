@@ -1,4 +1,4 @@
-@import '_themes.scss';
+@use '_themes.scss';
 
 //iterates over dark/light themes and outputs whatever was wrapped inside it
 //the SASS map called $theme-map contains the values for the current theme

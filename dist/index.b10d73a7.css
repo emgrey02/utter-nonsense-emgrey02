@@ -803,16 +803,6 @@
   src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
   font-weight: 300 700;
 }
-@font-face {
-  font-family: "Secuela";
-  src: url("Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf");
-  font-weight: 300 800;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
-  font-weight: 300 700;
-}
 .title {
   font-family: "Space Grotesk", sans-serif;
   width: 100%;
@@ -823,22 +813,22 @@
   border-block-end-style: solid;
 }
 .theme-light .title {
-  background-image: var(--gradient-15);
-  border-block-end-color: var(--red-2);
+  background-image: themed("bannerBkgdGradient");
+  border-block-end-color: themed("bannerBorderColor");
 }
 .theme-dark .title {
-  background-image: var(--gradient-23);
-  border-block-end-color: var(--cyan-9);
+  background-image: themed("bannerBkgdGradient");
+  border-block-end-color: themed("bannerBorderColor");
 }
 .title__main {
   font-size: var(--font-size-fluid-3);
   margin-inline: auto;
 }
 .theme-light .title__main {
-  color: var(--gray-7);
+  color: themed("textDisplayColor");
 }
 .theme-dark .title__main {
-  color: var(--gray-4);
+  color: themed("textDisplayColor");
 }
 .title__author {
   margin-inline: auto;
@@ -846,10 +836,79 @@
   font-size: var(--font-size-fluid-1);
 }
 .theme-light .title__author {
-  color: var(--gray-7);
+  color: themed("textDisplayColor");
 }
 .theme-dark .title__author {
-  color: var(--gray-4);
+  color: themed("textDisplayColor");
+}
+.poem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 439;
+  min-height: 70vh;
+}
+.theme-light .poem-container {
+  background-color: themed("mainColor");
+  color: themed("textBodyColor");
+}
+.theme-dark .poem-container {
+  background-color: themed("mainColor");
+  color: themed("textBodyColor");
+}
+.poem-container__img {
+  width: 100%;
+  max-width: var(--size-fluid-10);
+  margin: var(--size-fluid-2);
+}
+.poem-container__poem {
+  margin-block: var(--size-6);
+  box-shadow: var(--shadow-2);
+  padding: var(--size-8);
+  border-inline-start-width: var(--border-size-5);
+  border-inline-start-style: solid;
+}
+.theme-light .poem-container__poem {
+  background-color: themed("secondaryColor");
+  border-inline-start-color: themed("bannerBorderColor");
+}
+.theme-dark .poem-container__poem {
+  background-color: themed("secondaryColor");
+  border-inline-start-color: themed("bannerBorderColor");
+}
+.poem-container__poem--line {
+  font-size: var(--font-size-fluid-2);
+}
+@media (min-width: 900px) {
+  .poem-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .poem-container__img {
+    margin-inline: 0;
+  }
+}
+.footer {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  padding: var(--size-6);
+  border-block-start-width: var(--size-2);
+  border-block-start-style: solid;
+}
+.theme-light .footer {
+  background-image: themed("bannerBkgdGradient");
+  border-block-start-color: themed("bannerBorderColor");
+}
+.theme-dark .footer {
+  background-image: themed("bannerBkgdGradient");
+  border-block-start-color: themed("bannerBorderColor");
+}
+.footer p {
+  margin-inline: auto;
+  text-align: center;
 }
 .toggle {
   padding: var(--size-2);
@@ -869,223 +928,16 @@
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .theme-light .toggle__input::before, .theme-light .toggle__input::after {
-  background-color: var(--blue-1);
+  background-color: themed("secondaryColor");
 }
 .theme-dark .toggle__input::before, .theme-dark .toggle__input::after {
-  background-color: hsl(var(--indigo-8-hsl)/20%);
+  background-color: themed("secondaryColor");
 }
 .toggle__input::before {
   height: var(--size-3);
   width: var(--size-6);
   border-radius: var(--radius-3);
   opacity: 0.6;
-}
-@font-face {
-  font-family: "Secuela";
-  src: url("Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf");
-  font-weight: 300 800;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
-  font-weight: 300 700;
-}
-.poem-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: 439;
-  min-height: 70vh;
-}
-.theme-light .poem-container {
-  background-color: var(--blue-2);
-  color: var(--gray-8);
-}
-.theme-dark .poem-container {
-  background-color: hsl(var(--indigo-9-hsl)/20%);
-  color: var(--gray-3);
-}
-.poem-container__img {
-  width: 100%;
-  max-width: var(--size-fluid-10);
-  margin: var(--size-fluid-2);
-}
-.poem-container__poem {
-  margin-block: var(--size-6);
-  box-shadow: var(--shadow-2);
-  padding: var(--size-8);
-  border-inline-start-width: var(--border-size-5);
-  border-inline-start-style: solid;
-}
-.theme-light .poem-container__poem {
-  background-color: var(--blue-1);
-  border-inline-start-color: var(--red-2);
-}
-.theme-dark .poem-container__poem {
-  background-color: hsl(var(--indigo-8-hsl)/20%);
-  border-inline-start-color: var(--cyan-9);
-}
-.poem-container__poem--line {
-  font-size: var(--font-size-fluid-2);
-}
-@media (min-width: 900px) {
-  .poem-container {
-    flex-direction: row;
-    justify-content: center;
-    gap: 4rem;
-  }
-  .poem-container__img {
-    margin-inline: 0;
-  }
-}
-@font-face {
-  font-family: "Secuela";
-  src: url("Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf");
-  font-weight: 300 800;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
-  font-weight: 300 700;
-}
-.footer {
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  padding: var(--size-6);
-  border-block-start-width: var(--size-2);
-  border-block-start-style: solid;
-}
-.theme-light .footer {
-  background-image: var(--gradient-15);
-  border-block-start-color: var(--red-2);
-}
-.theme-dark .footer {
-  background-image: var(--gradient-23);
-  border-block-start-color: var(--cyan-9);
-}
-.footer p {
-  margin-inline: auto;
-  text-align: center;
-}
-@font-face {
-  font-family: "Secuela";
-  src: url("Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf");
-  font-weight: 300 800;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
-  font-weight: 300 700;
-}
-.title {
-  font-family: "Space Grotesk", sans-serif;
-  width: 100%;
-  text-align: center;
-  display: block;
-  padding-block: var(--size-4);
-  border-block-end-width: var(--size-2);
-  border-block-end-style: solid;
-}
-.theme-light .title {
-  background-image: themed("bannerBkgdGradient");
-  border-block-end-color: themed("bannerBorderColor");
-}
-.theme-dark .title {
-  background-image: themed("bannerBkgdGradient");
-  border-block-end-color: themed("bannerBorderColor");
-}
-.title__main {
-  font-size: var(--font-size-fluid-3);
-  margin-inline: auto;
-}
-.theme-light .title__main {
-  color: themed("textDisplayColor");
-}
-.theme-dark .title__main {
-  color: themed("textDisplayColor");
-}
-.title__author {
-  margin-inline: auto;
-  margin-block-start: var(--size-4);
-  font-size: var(--font-size-fluid-1);
-}
-.theme-light .title__author {
-  color: themed("textDisplayColor");
-}
-.theme-dark .title__author {
-  color: themed("textDisplayColor");
-}
-.poem-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: 439;
-  min-height: 70vh;
-}
-.theme-light .poem-container {
-  background-color: themed("mainColor");
-  color: themed("textBodyColor");
-}
-.theme-dark .poem-container {
-  background-color: themed("mainColor");
-  color: themed("textBodyColor");
-}
-.poem-container__img {
-  width: 100%;
-  max-width: var(--size-fluid-10);
-  margin: var(--size-fluid-2);
-}
-.poem-container__poem {
-  margin-block: var(--size-6);
-  box-shadow: var(--shadow-2);
-  padding: var(--size-8);
-  border-inline-start-width: var(--border-size-5);
-  border-inline-start-style: solid;
-}
-.theme-light .poem-container__poem {
-  background-color: themed("secondaryColor");
-  border-inline-start-color: themed("bannerBorderColor");
-}
-.theme-dark .poem-container__poem {
-  background-color: themed("secondaryColor");
-  border-inline-start-color: themed("bannerBorderColor");
-}
-.poem-container__poem--line {
-  font-size: var(--font-size-fluid-2);
-}
-@media (min-width: 900px) {
-  .poem-container {
-    flex-direction: row;
-    justify-content: center;
-    gap: 4rem;
-  }
-
-  .poem-container__img {
-    margin-inline: 0;
-  }
-}
-.footer {
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  padding: var(--size-6);
-  border-block-start-width: var(--size-2);
-  border-block-start-style: solid;
-}
-.theme-light .footer {
-  background-image: themed("bannerBkgdGradient");
-  border-block-start-color: themed("bannerBorderColor");
-}
-.theme-dark .footer {
-  background-image: themed("bannerBkgdGradient");
-  border-block-start-color: themed("bannerBorderColor");
-}
-.footer p {
-  margin-inline: auto;
-  text-align: center;
 }
 body {
   font-family: "Secuela", sans-serif;
