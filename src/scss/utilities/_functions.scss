@@ -1,7 +1,0 @@
-@use "_themes.scss";
-
-//must be inside the themify mixin
-//makes it easier to access the map called $theme-map
-@function themed($key) {
-    @return map-get($theme-map, $key);
-}

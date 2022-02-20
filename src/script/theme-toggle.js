@@ -1,41 +1,47 @@
-const toggle = document.querySelector('.toggle__input');
-const theme = document.querySelector('html');
+const content = document.querySelector('.app');
 
-function switchTheme(e) {
-    theme.classList.remove('theme-light');
-    theme.classList.remove('theme-dark');
-    
-    if (e.target.checked) {
-        localStorage.setItem('theme', 'dark');
-        toggle.checked = true;
-        theme.classList.add('theme-dark');
+const storageKey = 'theme-preference';
+
+const onClick = () => {
+    theme.value = theme.value === 'light' ? 'dark' : 'light';
+
+    setPreference();
+}
+
+const getColorPreference = () => {
+    if (localStorage.getItem(storageKey)) {
+        return localStorage.getItem(storageKey);
     } else {
-        localStorage.setItem('theme', 'light');
-        toggle.checked = false;
-        theme.classList.add('theme-light');
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 }
 
-toggle.addEventListener('change', switchTheme);
-
-function detectColorScheme() {
-    let defaultTheme = 'light';
-
-    if (localStorage.getItem('theme')) {
-        if (localStorage.getItem('theme') == 'dark') {
-            defaultTheme = 'dark'
-            toggle.checked = true;
-            theme.classList.remove('theme-light');
-            theme.classList.add('theme-dark');
-        }
-    } else if (!window.matchMedia) {
-        return false;
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        defaultTheme = 'dark';
-        toggle.checked = true;
-        theme.classList.remove('theme-light');
-        theme.classList.add('theme-dark');
-    }
+const setPreference = () => {
+    localStorage.setItem(storageKey, theme.value);
+    reflectPreference();
 }
 
-detectColorScheme();
+const reflectPreference = () => {
+    content.classList = `app ${theme.value}`;
+    document.querySelector('.toggle')?.setAttribute('aria-label', theme.value);
+}
+
+const theme = {
+    value: getColorPreference(),
+}
+
+reflectPreference();
+
+window.onload = () => {
+    reflectPreference();
+
+    document.querySelector('.toggle')?.addEventListener('click', onClick);
+}
+
+//sync w system changes
+window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', ({matches:isDark}) => {
+        theme.value = isDark ? 'dark' : 'light';
+        setPreference();
+    })

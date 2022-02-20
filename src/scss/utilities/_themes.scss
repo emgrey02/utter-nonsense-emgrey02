@@ -2,22 +2,41 @@
 @import '../../node_modules/open-props/colors-hsl.min.css';
 
 $themes: (
-    light: (
-        mainColor: var(--blue-2),
-        secondaryColor: var(--blue-1),
-        textDisplayColor: var(--gray-7),
-        textBodyColor: var(--gray-8),
-        bannerBkgdGradient: var(--gradient-15),
-        bannerBorderColor: var(--red-2),
+    'light': (
+        'colors':(
+            'primary': var(--blue-2),
+            'secondary': var(--blue-1),
+            'text-display': var(--gray-7),
+            'text-body': var(--gray-8),
+            'banner-bkgd': var(--gradient-15),
+            'banner-border': var(--red-2),
+            'icon-fill': var(--gray-6),
+            'icon-fill-hover': var(--gray-8),
+        ),
     ),
-    dark: (
-        mainColor: hsl(var(--indigo-9-hsl) / 20%),
-        secondaryColor: hsl(var(--indigo-8-hsl) / 20%),
-        textDisplayColor: var(--gray-4),
-        textBodyColor: var(--gray-3),
-        bannerBkgdGradient: var(--gradient-23),
-        bannerBorderColor: var(--cyan-9),
+    'dark': (
+        'colors':(
+            'primary': hsl(var(--indigo-9-hsl) / 20%),
+            'secondary':  hsl(var(--indigo-8-hsl) / 20%),
+            'text-display': var(--gray-4),
+            'text-body': var(--gray-3),
+            'banner-bkgd': var(--gradient-23),
+            'banner-border': var(--cyan-9),
+            'icon-fill': var(--gray-5),
+            'icon-fill-hover': var(--gray-3),
+        ),
     )
-)
+);
+
+@each $theme-name, $theme-vars in $themes {
+    $colors: map-get($theme-vars, "colors");
+
+    .app.#{$theme-name} {
+        // define a css variable for each color
+        @each $name, $color in $colors {
+            --#{$name}: #{$color};
+        }
+    }
+}
 
 

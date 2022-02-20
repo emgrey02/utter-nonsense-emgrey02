@@ -1,20 +1,17 @@
 @use "../base/typography" as type;
-@use '../utilities/functions';
-@use "../utilities/mixins";
 @use '../utilities/themes' as var;
 
 .poem-container {
+    font-family: type.$body-font;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-weight: type.$body-font-wght;
     min-height: 70vh;
-
-    @include mixins.themify(var.$themes) {
-        background-color: themed('mainColor');
-        color: themed('textBodyColor');
-    }
+    background-color: var(--primary);
+    color: var(--text-body);
+    
 
     &__img {
         width: 100%;
@@ -28,11 +25,9 @@
         padding: var(--size-8);
         border-inline-start-width: var(--border-size-5);
         border-inline-start-style: solid;
-
-        @include mixins.themify(var.$themes) {
-            background-color: themed('secondaryColor');
-            border-inline-start-color: themed('bannerBorderColor');
-        }
+        background-color: var(--secondary);
+        border-inline-start-color: var(--banner-border);
+        
 
         &--line {
             font-size: var(--font-size-fluid-2);

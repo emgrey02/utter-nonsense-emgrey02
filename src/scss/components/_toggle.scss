@@ -1,68 +1,100 @@
-@use "../utilities/mixins";
-@use "../utilities/functions";
 @use '../utilities/themes' as var;
+@use '../../../node_modules/open-props/easings.min.css';
+
+//should reorganize... nests too far
 
 .toggle {
-    padding: var(--size-2);
-    width: fit-content;
+    padding: 0;
+    border: none;
+    background: none;
     position: absolute;
-    display: inline-flex;
-    align-items: center;
-    margin: 2rem 1rem;
-    inset-block-start: 0;
-    inset-inline-end: 0;
+    inset-inline-end: var(--size-fluid-2);
+    inset-block-start: var(--size-fluid-2);
+
+    inline-size: 4rem;
+    block-size: 4rem;
+    aspect-ratio: 1;
+    border-radius: 50%; 
+
     cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 
-    &__input::before,
-    &__input::after {
-        content: '';
-        margin-inline: 2rem;
-        display: block;
-        transition: all 100ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    outline-offset: 5px;
 
-        @include mixins.themify(var.$themes) {
-            background-color: themed('secondaryColor');
+    @media (hover: none) {
+        inline-size: 6rem;
+        block-size: 6rem;
+    }
+    
+    .icon {
+        inline-size: 100%;
+        block-size: 100%;
+        color: var(--icon-fill);
+
+        &__moon > circle {
+            transform: translateX(5px);
+        }
+
+        &__moon, &__sun, &__sun--sun-beams {
+            transform-origin: center center;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            &__sun {
+                transition: transform .5s var(--ease-elastic-3);
+
+                &--sun-beams {
+                    transition: 
+                        transform .5s var(--ease-elastic-4),
+                        opacity .5s var(--ease-3);
+                }
+            }
+
+            &__moon > circle{
+                transition: transform .25s var(--ease-out-5);
+
+                @supports (cx: 1) {
+                    transition: cx .25s var(--ease-out-5);
+                }
+            }
         }
     }
 
-    &__input::before {
-        height: var(--size-3);
-        width: var(--size-6);
-        border-radius: var(--radius-3);
-        opacity: 0.6;
+    &:hover .icon {
+        color: var(--icon-fill-hover);
     }
 
+    &[aria-label='dark'] .icon {
+        &__sun {
+            transform: scale(1.25);
 
+            &--sun-beams {
+                opacity: 0;
+            }
+        }
 
-    // &__input + &__label::before {
-    //     content: '';
-    //     display: block;
-    //     height: var(--size-5);
-    //     width: var(--size-8);
-    //     border: 1px solid var(--blue-4);
-    //     border-radius: var(--size-4);
-    //     position: absolute;
-    //     top: 0px;
-    //     left: -20px;
-    //     background: var(--blue-5);
-    // }
+        &__moon > circle {
+            transform: translateX(-10px);
+        }
 
-    // &__input + &__label::after {
-    //     content: '';
-    //     display: block;
-    //     height: var(--size-6);
-    //     width: var(--size-6);
-    //     border: 1px solid var(--yellow-4);
-    //     border-radius: var(--radius-round);
-    //     position: absolute;
-    //     top: -3px;
-    //     left: -25px;
-    //     background: var(--yellow-4);
-    //     transition: all 0.3s ease-in;
-    // }
+        @media (prefers-reduced-motion: no-preference) {
+            &__sun {
+                transform: scale(1.25);
+                transition-timing-function: var(--ease-3);
+                transition-duration: .25s;
 
-    // &__input:checked + &__label::after {
-    //     left: 5px;
-    //     transition: all 0.3s ease-in;
-    // }
+                &--sun-beams {
+                    transform: rotateZ(-25deg);
+                    transition-duration: .15s;
+                }
+            }
+
+            &__moon > circle{
+                transition-delay: .25s;
+                transition-duration: .5s;
+            }
+        }
+
+    }
 }
