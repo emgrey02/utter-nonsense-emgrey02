@@ -5,14 +5,13 @@
 
 .toggle {
     padding: 0;
+    display: inline-block;
     border: none;
     background: none;
-    position: absolute;
-    inset-inline-end: var(--size-fluid-2);
-    inset-block-start: var(--size-fluid-2);
+    position: relative;
 
-    inline-size: 4rem;
-    block-size: 4rem;
+    inline-size: var(--size-fluid-5);
+    block-size: var(--size-fluid-5);
     aspect-ratio: 1;
     border-radius: 50%; 
 
