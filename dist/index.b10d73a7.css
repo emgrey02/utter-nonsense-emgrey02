@@ -793,16 +793,6 @@
 :where(abbr) {
   text-decoration-color: var(--blue-5);
 }
-@font-face {
-  font-family: "Secuela";
-  src: url("Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf");
-  font-weight: 300 800;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
-  font-weight: 300 700;
-}
 .app.light {
   --primary: var(--blue-2);
   --secondary: var(--blue-1);
@@ -822,6 +812,16 @@
   --banner-border: var(--cyan-9);
   --icon-fill: var(--gray-5);
   --icon-fill-hover: var(--gray-3);
+}
+@font-face {
+  font-family: "Secuela";
+  src: url("Secuela-Regular-v_1_787-TTF-VF.aa458104.ttf");
+  font-weight: 300 800;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("SpaceGrotesk[wght].8dac9c1e.ttf");
+  font-weight: 300 700;
 }
 .title {
   font-family: "Space Grotesk", sans-serif;
