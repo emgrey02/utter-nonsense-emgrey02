@@ -11,6 +11,9 @@
     aspect-ratio: 1;
     border-radius: 50%; 
 
+    inline-size: 4rem;
+    block-size: 4rem;
+
     cursor: pointer;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
@@ -18,13 +21,13 @@
     outline-offset: 5px;
 
     @media (hover: none) {
-        inline-size: 6rem;
-        block-size: 6rem;
+        inline-size: 5rem;
+        block-size: 5rem;
     }
     
     .icon {
-        inline-size: 100%;
-        block-size: 100%;
+        inline-size: 5rem;
+        block-size: 5rem;
         color: var(--icon-fill);
 
         &__moon > circle {

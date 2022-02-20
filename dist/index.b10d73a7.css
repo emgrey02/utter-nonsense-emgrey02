@@ -943,6 +943,8 @@
   position: relative;
   aspect-ratio: 1;
   border-radius: 50%;
+  inline-size: 4rem;
+  block-size: 4rem;
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
@@ -950,13 +952,13 @@
 }
 @media (hover: none) {
   .toggle {
-    inline-size: 6rem;
-    block-size: 6rem;
+    inline-size: 5rem;
+    block-size: 5rem;
   }
 }
 .toggle .icon {
-  inline-size: 100%;
-  block-size: 100%;
+  inline-size: 5rem;
+  block-size: 5rem;
   color: var(--icon-fill);
 }
 .toggle .icon__moon > circle {
