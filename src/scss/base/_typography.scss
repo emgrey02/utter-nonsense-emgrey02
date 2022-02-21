@@ -2,12 +2,14 @@
     font-family: "Secuela";
     src: url("../fonts/Secuela-Regular-v_1_787-TTF-VF.ttf");
     font-weight: 300 800;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Space Grotesk";
     src: url("../fonts/SpaceGrotesk[wght].ttf");
     font-weight: 300 700;
+    font-display: swap;
 }
 
 $display-font: "Space Grotesk", sans-serif;
