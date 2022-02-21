@@ -74,6 +74,11 @@
 
         &__moon > circle {
             transform: translateX(-10px);
+
+            @supports (cx: 1) {
+                transform: translateX(0);
+                cx: 15;
+            }
         }
 
         @media (prefers-reduced-motion: no-preference) {
