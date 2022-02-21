@@ -3,16 +3,18 @@
 //should reorganize... nests too far
 
 .toggle {
-    padding: 0;
-    display: inline-block;
+    padding: 1rem;
+    margin: auto;
+
     border: none;
     background: none;
-    position: relative;
-    aspect-ratio: 1;
-    border-radius: 50%; 
 
-    inline-size: 4rem;
-    block-size: 4rem;
+    display: block;
+
+    position: relative;
+
+    aspect-ratio: 1;
+    border-radius: 50%;
 
     cursor: pointer;
     touch-action: manipulation;
@@ -24,10 +26,17 @@
         inline-size: 5rem;
         block-size: 5rem;
     }
+
+    @media (min-width: 800px) {
+        display: block;
+        position: absolute;
+        inset-inline-end: 0;
+        inset-block-start: 0;
+    }
     
     .icon {
-        inline-size: 5rem;
-        block-size: 5rem;
+        inline-size: var(--size-fluid-4);
+        block-size: var(--size-fluid-4);
         color: var(--icon-fill);
 
         &__moon > circle {

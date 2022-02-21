@@ -4,7 +4,7 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html && parcel watch src/index.html",
     "build": "rm -f dist/* && parcel build src/index.html"
   },
   "repository": {

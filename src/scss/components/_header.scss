@@ -27,5 +27,8 @@
         font-size: var(--font-size-fluid-1);
         color: var(--text-body);
         
+        @media (min-width: 800px) {
+            margin-block: var(--size-4);
+        }
     }
 }
