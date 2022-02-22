@@ -3,7 +3,7 @@
 //should reorganize... nests too far
 
 .toggle {
-    padding: 1rem;
+    padding: .5rem;
     margin: auto;
 
     border: none;
@@ -22,22 +22,25 @@
 
     outline-offset: 5px;
 
-    @media (hover: none) {
-        inline-size: 5rem;
-        block-size: 5rem;
-    }
+    
 
     @media (min-width: 800px) {
         display: block;
         position: absolute;
         inset-inline-end: 0;
         inset-block-start: 0;
+        padding: 1rem;
     }
     
     .icon {
         inline-size: var(--size-fluid-4);
         block-size: var(--size-fluid-4);
         color: var(--icon-fill);
+
+        @media (hover: none) {
+            inline-size: 3rem;
+            block-size: 3rem;
+        }
 
         &__moon > circle {
             transform: translateX(5px);
