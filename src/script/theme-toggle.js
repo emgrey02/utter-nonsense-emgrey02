@@ -2,7 +2,8 @@ const content = document.querySelector('.app');
 
 const storageKey = 'theme-preference';
 
-const onClick = () => {
+const onClick = (e) => {
+    console.log(e.target.classList);
     theme.value = theme.value === 'light' ? 'dark' : 'light';
 
     setPreference();
@@ -23,7 +24,7 @@ const setPreference = () => {
 
 const reflectPreference = () => {
     content.classList = `app ${theme.value}`;
-    document.querySelector('.toggle')?.setAttribute('aria-label', theme.value);
+    document.querySelector('.theme-toggle')?.setAttribute('aria-label', theme.value);
 }
 
 const theme = {
@@ -35,7 +36,7 @@ reflectPreference();
 window.onload = () => {
     reflectPreference();
 
-    document.querySelector('.toggle')?.addEventListener('click', onClick);
+    document.querySelector('.theme-toggle')?.addEventListener('click', onClick);
 }
 
 //sync w system changes

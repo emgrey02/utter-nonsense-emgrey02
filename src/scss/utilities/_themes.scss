@@ -37,6 +37,21 @@ $themes: (
             --#{$name}: #{$color};
         }
     }
+
+    .app.system {
+        @each $name, $color in $colors {
+            @if $theme-name == 'dark' {
+                @media (prefers-color-scheme: dark) {
+                    --#{$name}: #{$color};
+                }
+            } @else {
+                --#{$name}: #{$color};
+            }
+            
+        }
+    }
 }
+
+
 
 
