@@ -1,10 +1,9 @@
 const content = document.querySelector('body');
-const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
 const storageKey = 'theme-preference';
 
 const onClick = (e) => {
-    theme.value = e.target.classList[1];
+    theme.value = e.target.id;
     setPreference();
 }
 
