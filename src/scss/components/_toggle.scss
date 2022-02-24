@@ -2,114 +2,48 @@
 
 //should reorganize... nests too far
 
-.toggle {
-    padding: .5rem;
-    margin: auto;
+.theme-toggle {
+    padding-block: var(--size-3);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+    button {
+        padding-inline: 1rem;
+        padding-block: .2rem;
+        background-color: var(--secondary);
+        color: var(--text-display);
+    }
 
-    border: none;
-    background: none;
-
-    display: block;
-
-    position: relative;
-
-    aspect-ratio: 1;
-    border-radius: 50%;
-
-    cursor: pointer;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-
-    outline-offset: 5px;
+    button:hover {
+        background-color: var(--primary);
+        color: var(--text-body);
+    }
 
     
+}
 
-    @media (min-width: 800px) {
-        display: block;
-        position: absolute;
-        inset-inline-end: 0;
-        inset-block-start: 0;
-        padding: 1rem;
+.arrow {
+    margin-inline: auto;
+    width: 2rem;
+    height: 2rem;
+    border-inline-end: .5rem solid var(--text-body);
+    border-block-end: .5rem solid var(--text-body);
+    transform: rotate(45deg);
+
+    @media (prefers-reduced-motion: no-preference) {
+        transition: transform 500ms var(--ease-squish-2);
     }
-    
-    .icon {
-        inline-size: var(--size-fluid-4);
-        block-size: var(--size-fluid-4);
-        color: var(--icon-fill);
+}
 
-        @media (hover: none) {
-            inline-size: 3rem;
-            block-size: 3rem;
-        }
+.app.dark .arrow {
+    transform: translateX(-.5rem) rotate(45deg);
+}
 
-        &__moon > circle {
-            transform: translateX(5px);
-        }
+.app.light .arrow {
+    transform: translateX(-5.7rem) rotate(45deg);
+}
 
-        &__moon, &__sun, &__sun--sun-beams {
-            transform-origin: center center;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            &__sun {
-                transition: transform .5s var(--ease-elastic-3);
-
-                &--sun-beams {
-                    transition: 
-                        transform .5s var(--ease-elastic-4),
-                        opacity .5s var(--ease-3);
-                }
-            }
-
-            &__moon > circle{
-                transition: transform .25s var(--ease-out-5);
-
-                @supports (cx: 1) {
-                    transition: cx .25s var(--ease-out-5);
-                }
-            }
-        }
-    }
-
-    &:hover .icon {
-        color: var(--icon-fill-hover);
-    }
-
-    &[aria-label='dark'] .icon {
-        &__sun {
-            transform: scale(1.25);
-
-            &--sun-beams {
-                opacity: 0;
-            }
-        }
-
-        &__moon > circle {
-            transform: translateX(-10px);
-
-            @supports (cx: 1) {
-                transform: translateX(0);
-                cx: 15;
-            }
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            &__sun {
-                transform: scale(1.25);
-                transition-timing-function: var(--ease-3);
-                transition-duration: .25s;
-
-                &--sun-beams {
-                    transform: rotateZ(-25deg);
-                    transition-duration: .15s;
-                }
-            }
-
-            &__moon > circle{
-                transition-delay: .25s;
-                transition-duration: .5s;
-            }
-        }
-
-    }
+.app.system .arrow {
+    transform: translateX(5.3rem) rotate(45deg);
 }

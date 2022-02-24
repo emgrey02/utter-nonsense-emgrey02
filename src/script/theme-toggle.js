@@ -3,8 +3,7 @@ const content = document.querySelector('.app');
 const storageKey = 'theme-preference';
 
 const onClick = (e) => {
-    console.log(e.target.classList);
-    theme.value = theme.value === 'light' ? 'dark' : 'light';
+    theme.value = e.target.classList[1];
 
     setPreference();
 }
@@ -13,7 +12,7 @@ const getColorPreference = () => {
     if (localStorage.getItem(storageKey)) {
         return localStorage.getItem(storageKey);
     } else {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        return 'system';
     }
 }
 
@@ -40,9 +39,13 @@ window.onload = () => {
 }
 
 //sync w system changes
-window
-    .matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', ({matches:isDark}) => {
-        theme.value = isDark ? 'dark' : 'light';
-        setPreference();
-    })
+// window
+//     .matchMedia('(prefers-color-scheme: dark)')
+//     .addEventListener('change', ({matches:isDark}) => {
+//         if (theme.value === 'system') {
+//             return;
+//         } else {
+//             theme.value = isDark ? 'dark' : 'light';
+//         }
+//         setPreference();
+//     })

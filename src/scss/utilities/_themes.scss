@@ -1,5 +1,4 @@
 //light/dark mode
-@import '../../node_modules/open-props/colors-hsl.min.css';
 
 $themes: (
     'light': (
@@ -16,8 +15,8 @@ $themes: (
     ),
     'dark': (
         'colors':(
-            'primary': hsl(var(--indigo-9-hsl) / 20%),
-            'secondary':  hsl(var(--indigo-8-hsl) / 20%),
+            'primary': rgba(39, 39, 105, 0.411),
+            'secondary':  rgba(74, 74, 148, 0.5),
             'text-display': var(--gray-4),
             'text-body': var(--gray-3),
             'banner-bkgd': var(--gradient-23),
@@ -39,7 +38,6 @@ $themes: (
     }
 
     .app.system {
-        
         @if $theme-name == 'dark' {
             @media (prefers-color-scheme: dark) {
                 @each $name, $color in $colors {
