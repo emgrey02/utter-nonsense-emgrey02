@@ -17,7 +17,7 @@
 
     button:hover {
         background-color: var(--primary);
-        color: var(--text-body);
+        color: var(--text-display);
     }
 
     
@@ -36,14 +36,14 @@
     }
 }
 
-.app.dark .arrow {
+body.dark .arrow {
     transform: translateX(-.5rem) rotate(45deg);
 }
 
-.app.light .arrow {
+body.light .arrow {
     transform: translateX(-5.7rem) rotate(45deg);
 }
 
-.app.system .arrow {
+body.system .arrow {
     transform: translateX(5.3rem) rotate(45deg);
 }
