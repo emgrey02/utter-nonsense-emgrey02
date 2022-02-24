@@ -39,15 +39,17 @@ $themes: (
     }
 
     .app.system {
-        @each $name, $color in $colors {
-            @if $theme-name == 'dark' {
-                @media (prefers-color-scheme: dark) {
+        
+        @if $theme-name == 'dark' {
+            @media (prefers-color-scheme: dark) {
+                @each $name, $color in $colors {
                     --#{$name}: #{$color};
                 }
-            } @else {
-                --#{$name}: #{$color};
             }
-            
+        } @else {
+            @each $name, $color in $colors {
+                --#{$name}: #{$color};
+            } 
         }
     }
 }
