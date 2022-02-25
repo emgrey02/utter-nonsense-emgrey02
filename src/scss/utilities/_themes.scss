@@ -10,8 +10,8 @@ body {
 }
 
 body.dark {
-    --primary: var(--gray-9);
-    --secondary: var(--gray-8);
+    --primary: rgba(36, 36, 87, 0.527);
+    --secondary: rgba(48, 48, 102, 0.479);
     --text-display: var(--gray-4);
     --text-body: var(--gray-5);
     --banner-bkgd: var(--gradient-23);
@@ -23,8 +23,8 @@ body.dark {
 
 @media (prefers-color-scheme: dark) {
     body {
-        --primary: var(--gray-9);
-        --secondary: var(--gray-8);
+        --primary: rgba(36, 36, 87, 0.527);
+        --secondary: rgba(48, 48, 102, 0.479);
         --text-display: var(--gray-4);
         --text-body: var(--gray-5);
         --banner-bkgd: var(--gradient-23);
@@ -47,8 +47,8 @@ body.dark {
 
 body.system {
     @media (prefers-color-scheme: dark) {
-        --primary: var(--gray-9);
-        --secondary: var(--gray-8);
+        --primary: rgba(36, 36, 87, 0.527);
+        --secondary: rgba(48, 48, 102, 0.479);
         --text-display: var(--gray-4);
         --text-body: var(--gray-5);
         --banner-bkgd: var(--gradient-23);

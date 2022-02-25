@@ -1,12 +1,11 @@
 @use "../base/typography" as type;
 
 .poem-container {
-    font-family: type.$body-font;
+    font-family: type.$display-font;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: type.$body-font-wght;
     min-height: 70vh;
     background-color: var(--primary);
     color: var(--text-body);
@@ -21,7 +20,7 @@
     &__poem {
         margin-block: var(--size-6);
         box-shadow: var(--shadow-2);
-        padding: var(--size-8);
+        padding: var(--size-7);
         border-inline-start-width: var(--border-size-5);
         border-inline-start-style: solid;
         background-color: var(--secondary);
@@ -29,7 +28,10 @@
         
 
         &--line {
-            font-size: var(--font-size-fluid-2);
+            font-size: var(--size-fluid-3);
+            font-weight: 200;
+            line-height: 1.5;
+            letter-spacing: -0.05em;
         }
     }
 }

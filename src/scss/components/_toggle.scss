@@ -1,7 +1,5 @@
 @use '../../../node_modules/open-props/easings.min.css';
 
-//should reorganize... nests too far
-
 .theme-toggle {
     padding-block: var(--size-3);
     display: flex;
@@ -19,16 +17,14 @@
         background-color: var(--primary);
         color: var(--text-display);
     }
-
-    
 }
 
 .arrow {
     margin-inline: auto;
-    width: 2rem;
-    height: 2rem;
-    border-inline-end: .5rem solid var(--text-body);
-    border-block-end: .5rem solid var(--text-body);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-inline-end: .5rem solid var(--text-display);
+    border-block-end: .5rem solid var(--text-display);
     transform: rotate(45deg);
 
     @media (prefers-reduced-motion: no-preference) {
@@ -41,7 +37,7 @@ body.dark .arrow {
 }
 
 body.light .arrow {
-    transform: translateX(-5.7rem) rotate(45deg);
+    transform: translateX(-6rem) rotate(45deg);
 }
 
 body.system .arrow {

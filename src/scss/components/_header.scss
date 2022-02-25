@@ -15,7 +15,11 @@
     
     
     &__main {
+        font-family: type.$body-font;
         font-size: var(--font-size-fluid-3);
+        font-weight: type.$body-font-wght;
+        line-height: 1.2;
+        letter-spacing: 0.016em;
         margin-inline: auto;
         color: var(--text-display);
         
