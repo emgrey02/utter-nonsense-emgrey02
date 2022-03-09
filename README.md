@@ -2,7 +2,9 @@
 
 This webpage displays a stanza of Edward Lear's **Nonsense Alphabet 1**. The chosen stanza begins with "D was a duck" and is about a duck. There is an image of a duck to accompany the poem. 
 
-[![Image from Gyazo](https://i.gyazo.com/0910bff94f9ed1f8fa7e9f2a52e52837.gif)](https://gyazo.com/0910bff94f9ed1f8fa7e9f2a52e52837)
+![duck-light](https://user-images.githubusercontent.com/62446436/157525797-d5ee49c0-a2ad-46ee-8a2e-90e40dcf74e4.png)
+![duck-dark](https://user-images.githubusercontent.com/62446436/157525827-133c4c46-83cc-4444-9deb-6d486147b28f.png)
+
 
 This page includes:
 - A light/dark mode toggle button that first follows system preferences and will remember the user's choice using local storage
